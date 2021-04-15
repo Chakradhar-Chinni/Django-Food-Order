@@ -10,5 +10,6 @@ def mainpage(request):
 def pizzadashboard(request):
     return render(request,'pizzadashboard.html')
     #return HttpResponse("Pizza Dashboard")
+    
 def burgerdashboard(request):
     return render(request,'burgerdashboard.html')
