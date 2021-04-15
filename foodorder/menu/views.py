@@ -4,7 +4,6 @@ from django.http import HttpResponse
 def mainpage(request):
     #return HttpResponse("Main Page static data")
     return render(request,'welcome.html')
-
 def pizzadashboard(request):
     return render(request,'pizzadashboard.html')
     #return HttpResponse("Pizza Dashboard")
