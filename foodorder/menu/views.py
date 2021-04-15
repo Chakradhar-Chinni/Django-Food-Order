@@ -4,8 +4,9 @@ from django.http import HttpResponse
     # Create your views here.
 
 def mainpage(request):
+     return render(request,'welcome.html')
     #return HttpResponse("Main Page static data")
-    return render(request,'welcome.html')
+   
 def pizzadashboard(request):
     return render(request,'pizzadashboard.html')
     #return HttpResponse("Pizza Dashboard")
