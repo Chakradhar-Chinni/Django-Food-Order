@@ -7,4 +7,4 @@ class PickBurger(models.Model):
             Quantity = models.IntegerField()
             Message = models.CharField(max_length=1000,blank=True)  #True -> Optional Field'
             class Meta:
-                db_table = "burger_logs" 
+                db_table = "burger_logs" #currently all orders are stored in this table only
