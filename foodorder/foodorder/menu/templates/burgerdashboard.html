@@ -1,13 +1,17 @@
+{% load crispy_forms_tags %}
 <html>
     <head>
             <h1 align="center">Welcome to the site</h1>
-            <link rel="stylesheet" href="styles.css">
+            
             <hr><hr>
     </head>
     <body>
             Available
             <a href ="{% url 'main_page' %}">Welcome Page</a>
             <h1 align="center">Choose your own burger</h1>
+        <a href = "{% url 'burger_type_1' %}">Cheese Burger</a>
+        <a href = "{% url 'burger_type_2' %}">Paneer Burger</a>
+        <a href = "{% url 'burger_type_3' %}">Roasted Burger</a>
 
     </body>
 </html>

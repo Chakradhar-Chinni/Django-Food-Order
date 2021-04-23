@@ -1,0 +1,24 @@
+{% load crispy_forms_tags %}
+<html>
+    <head>
+            <h1 align="center">Welcome to the site</h1>
+            <hr><hr>
+    </head>
+    <body>
+            Available
+            <a href ="{% url 'main_page' %}">Welcome Page</a>
+            <a href ="{% url 'burger_dashboard' %}">Choose another burger</a>
+            <h1 align="center">Choose your own burger</h1>
+            <h3 align="center">Select your Roasted Burger customizations</h3>
+        <form method='POST'>
+                {% csrf_token %}
+                <center>
+                                {% for field in form %}
+                                {{field | as_crispy_field}}
+                                {% endfor %}<br><br>
+                <input type="submit" value="Place Order">
+                </form>
+        </center>
+
+    </body>
+</html>
