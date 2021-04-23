@@ -13,9 +13,9 @@
         <form method='POST'>
                 {% csrf_token %}
                 <center>
-                                {% for field in form %}
-                                {{field | as_crispy_field}}
-                                {% endfor %}<br><br>
+                        {% for field in form %}
+                        {{field | as_crispy_field}}
+                        {% endfor %}<br><br>
                 <input type="submit" value="Place Order">
                 </form>
         </center>
