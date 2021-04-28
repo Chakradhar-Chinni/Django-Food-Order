@@ -9,4 +9,3 @@ class PickBurger(models.Model):
             class Meta:
                 db_table = "burger_logs" #currently all orders are stored in this table only
 
-class Meta:
