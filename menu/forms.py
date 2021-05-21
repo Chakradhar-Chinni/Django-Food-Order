@@ -3,7 +3,7 @@ from . models import PickBurger
 
 class BurgerSelection(forms.ModelForm):  
     class Meta: 
-        model = PickBurger
+        model = PickBurger 
         fields = "__all__"
 
  
