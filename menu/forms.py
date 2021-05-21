@@ -1,7 +1,7 @@
 from django import forms
 from . models import PickBurger
 
-class BurgerSelection(forms.ModelForm):
+class BurgerSelection(forms.ModelForm): 
     class Meta:
         model = PickBurger
         fields = "__all__"
