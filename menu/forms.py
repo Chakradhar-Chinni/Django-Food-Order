@@ -7,6 +7,6 @@ class BurgerSelection(forms.ModelForm):
         fields = "__all__"
 
  
-#by default blank field will be true
+#by default blank field will be true 
 #true -> Not Mandatory 
 #false -> Mandatory 
